@@ -1,2 +1,4 @@
 
 processwire/site/templates/frontend/node_modules/
+/processwire/site/templates/frontend/web_modules/
+/processwire/site/templates/frontend/www/lib/
