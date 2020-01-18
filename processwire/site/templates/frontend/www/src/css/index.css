@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+
+.andy{
+  color: #a4ff2f;
+  @apply bg-orange-600;
+  & .yarn{
+    color:red;
+  }
+}
+
+article {
+  & p {
+    color: #333;
+  }
+
+  &:hover {
+    color: rebeccapurple;
+  }
+}
+.grid-1 {
+  gap: 20px;
+}
