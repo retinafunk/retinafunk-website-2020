@@ -1,0 +1,34 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "servor": "^3.1.0",
+    "snowpack": "^1.0.5"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2",
+    "until": "^0.1.1"
+  },
+  "scripts": {
+    "prepare": "snowpack",
+    "start": "servor ./ www/index.html 8080 --reload --browse",
+    "transpile": "babel www/src/ --out-dir www/lib --watch"
+  },
+  "snowpack": {
+    "webDependencies": [
+      "lit-html",
+      "lit-html/directives/until.js",
+      "lit-element"
+    ]
+  }
+}
