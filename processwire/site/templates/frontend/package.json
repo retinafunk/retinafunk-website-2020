@@ -11,18 +11,24 @@
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
     "servor": "^3.1.0",
     "snowpack": "^1.0.5"
   },
   "dependencies": {
     "lit-element": "^2.2.1",
     "lit-html": "^1.1.2",
+    "tailwindcss": "^1.1.4",
     "until": "^0.1.1"
   },
   "scripts": {
     "prepare": "snowpack",
     "start": "servor ./ www/index.html 8080 --reload --browse",
-    "transpile": "babel www/src/ --out-dir www/lib --watch"
+    "transpile": "babel www/src/ --out-dir www/lib --watch",
+    "styles": "postcss www/src/css/index.css -o www/lib/styles/index.css -c postcss.config.js ---watch",
+    "dev" : "concurrently  \"yarn prepare\" \"yarn styles\" \"yarn transpile\" \"yarn start\""
+
   },
   "snowpack": {
     "webDependencies": [
