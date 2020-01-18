@@ -38,7 +38,7 @@ const fetchData = () =>{
                     {
                       home {
                         first {
-                          url,name,email,title,headline
+                          url,name,email,title,headline 
                         }
                       }
                     }
