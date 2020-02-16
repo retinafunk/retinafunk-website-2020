@@ -17,9 +17,12 @@
     "snowpack": "^1.0.5"
   },
   "dependencies": {
+    "fetch-pjax": "^1.1.1",
     "lit-element": "^2.2.1",
     "lit-html": "^1.1.2",
-    "tailwindcss": "^1.1.4",
+    "little-pjax": "^0.3.1",
+    "pjax": "^0.2.8",
+    "tailwindcss": "^1.2.0",
     "until": "^0.1.1"
   },
   "scripts": {
@@ -27,11 +30,13 @@
     "start": "servor ./ www/index.html 8080 --reload --browse",
     "transpile": "babel www/src/ --out-dir www/lib --watch",
     "styles": "postcss www/src/css/index.css -o www/lib/styles/index.css -c postcss.config.js ---watch",
-    "dev" : "concurrently  \"yarn prepare\" \"yarn styles\" \"yarn transpile\" \"yarn start\""
-
+    "dev": "concurrently  \"yarn prepare\" \"yarn styles\" \"yarn transpile\" \"yarn start\""
   },
   "snowpack": {
     "webDependencies": [
+      "pjax",
+      "little-pjax",
+      "fetch-pjax",
       "lit-html",
       "lit-html/directives/until.js",
       "lit-element"
