@@ -112,3 +112,5 @@ $config->httpHosts = array('www.retinafunk.com', 'retinafunk.com');
 $config->debug = true;
 
 setlocale(LC_ALL, 'de_DE.UTF-8');
+$config->useMarkupRegions = true;
+$config->appendTemplateFile = '_main.php';
