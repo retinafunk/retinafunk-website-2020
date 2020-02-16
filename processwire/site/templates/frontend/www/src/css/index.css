@@ -4,6 +4,11 @@
 
 @import "tailwindcss/utilities";
 
+.primary-nav{
+  &.is-open{
+    transform: translateX(0);
+  }
+}
 
 .andy{
   color: #a4ff2f;
