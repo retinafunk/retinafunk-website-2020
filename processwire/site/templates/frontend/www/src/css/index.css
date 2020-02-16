@@ -5,28 +5,22 @@
 @import "tailwindcss/utilities";
 
 .primary-nav{
-  &.is-open{
+
+}
+.label-close{
+  display: none;
+}
+.is-open {
+  & .primary-nav{
     transform: translateX(0);
   }
-}
+  & .nav-trigger{
 
-.andy{
-  color: #a4ff2f;
-  @apply bg-orange-600;
-  & .yarn{
-    color:red;
   }
-}
-
-article {
-  & p {
-    color: #333;
+  & .label-close{
+    display: inline;
   }
-
-  &:hover {
-    color: rebeccapurple;
+  & .label-menu{
+    display: none;
   }
-}
-.grid-1 {
-  gap: 20px;
 }
