@@ -1,15 +1,82 @@
 <!-- File Location: index.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head><title>Snowpack - Simple Example</title></head>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./www/lib/styles/index.css">
-<script defer type="module" src="./www/lib/js/app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="./www/lib/styles/index.css">
+    <script defer type="module" src="./www/lib/js/app.js"></script>
+</head>
 <body>
-<h1 class="text-4xl">Hello</h1>
-<div id="app"></div>
-<div id="app2"></div>
-<div id="gql-result"></div>
-<lit-elem-demo></lit-elem-demo>
+<header class="rf:header fixed z-10 w-full top-0 h-16">
+    <button id="nav-trigger"
+            class="nav-trigger lg:hidden absolute top-0 right-0 z-20 text-white w-20 h-10 p-2">
+        <span class="label-menu bg-black ">MENU</span><span class="label-close">X</span>
+    </button>
+
+    <nav id="nav-panel"
+         class="rf:primary-nav primary-nav fixed z-10 w-full h-full lg:h-24 bg-black transform -translate-x-full lg:transform-none transition-transform duration-500 ease-out ">
+        <div class="container lg:mx-auto lg:flex lg:items-center lg:justify-between">
+            <a href="#" class="rf-logo block lg:w-auto text-white text-4xl lg:text-6xl font-bold px-4 lg:px-0 text-center">RETINAFUNK</a>
+            <ul class="h-full flex flex-col lg:flex-row items-center justify-around lg:justify-end  ">
+                <li class=""><a class="text-4xl lg:text-2xl text-white lg:ml-4" href="/portfolio/">portfolio</a></li>
+                <li class=""><a class="text-4xl lg:text-2xl text-white lg:ml-4" href="/about/">about</a></li>
+                <li class=""><a class="text-4xl lg:text-2xl text-white lg:ml-4" href="/work/">work</a></li>
+                <li class=""><a class="text-4xl lg:text-2xl text-white lg:ml-4" href="/contact/">contact</a></li>
+                <li class=""><a class="text-4xl lg:text-2xl text-white lg:ml-4" href="/impressum/">impressum</a></li>
+        </div>
+
+        </ul>
+    </nav>
+</header>
+<div class="container px-4 md:mx-auto pt-16 ">
+    <main id="content">
+        <article class="py-6">
+            I'm Andy Weisner a.k.a @retinafunk,
+            I am a web developer, with more than 20 years of professional experience in the field.
+            RETINAFUNK is the name and brand of my freelance development work.
+            Besides my freelance work, I am employed as part-time as a Frontend Developer at PERMANENT Düsseldorf.
+            Based in Düsseldorf , Germany I work with various international clients on all kinds of web projects.
+            Websites , Web Apps ,Web Components, PWAs, Mobile Hybrid Apps .
+        </article>
+        <article class="py-6">
+            I'm Andy Weisner a.k.a @retinafunk,
+            I am a web developer, with more than 20 years of professional experience in the field.
+            RETINAFUNK is the name and brand of my freelance development work.
+            Besides my freelance work, I am employed as part-time as a Frontend Developer at PERMANENT Düsseldorf.
+            Based in Düsseldorf , Germany I work with various international clients on all kinds of web projects.
+            Websites , Web Apps ,Web Components, PWAs, Mobile Hybrid Apps .
+        </article>
+        <article class="py-6">
+            I'm Andy Weisner a.k.a @retinafunk,
+            I am a web developer, with more than 20 years of professional experience in the field.
+            RETINAFUNK is the name and brand of my freelance development work.
+            Besides my freelance work, I am employed as part-time as a Frontend Developer at PERMANENT Düsseldorf.
+            Based in Düsseldorf , Germany I work with various international clients on all kinds of web projects.
+            Websites , Web Apps ,Web Components, PWAs, Mobile Hybrid Apps .
+        </article>
+        <article class="py-6">
+            I'm Andy Weisner a.k.a @retinafunk,
+            I am a web developer, with more than 20 years of professional experience in the field.
+            RETINAFUNK is the name and brand of my freelance development work.
+            Besides my freelance work, I am employed as part-time as a Frontend Developer at PERMANENT Düsseldorf.
+            Based in Düsseldorf , Germany I work with various international clients on all kinds of web projects.
+            Websites , Web Apps ,Web Components, PWAs, Mobile Hybrid Apps .
+        </article>
+        <article class="py-6">
+            I'm Andy Weisner a.k.a @retinafunk,
+            I am a web developer, with more than 20 years of professional experience in the field.
+            RETINAFUNK is the name and brand of my freelance development work.
+            Besides my freelance work, I am employed as part-time as a Frontend Developer at PERMANENT Düsseldorf.
+            Based in Düsseldorf , Germany I work with various international clients on all kinds of web projects.
+            Websites , Web Apps ,Web Components, PWAs, Mobile Hybrid Apps .
+        </article>
+    </main>
+</div>
+
+<footer></footer>
 </body>
 </html>
